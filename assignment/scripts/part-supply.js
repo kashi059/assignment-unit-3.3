@@ -33,7 +33,7 @@ console.log('6. Showing supplyChanges...');
 for (let x = 0; x < supplyChanges.length; x++) {
     if (x > 0);
         console.log('Added ', x, " parts" )
-    if (x = 0);
+    if (x === 0);
         console.log('No Change')
     if (x < 0);
         console.log('Removed ', x, " parts" )
