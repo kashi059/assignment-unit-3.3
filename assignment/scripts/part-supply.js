@@ -4,25 +4,34 @@ console.log('****** Part Supply *******');
 // 1. Create a variable called 'partsNeeded' with a value of the number 40 
 //    & console.log the variable
 let partsNeeded = 40
-console.log('1. Number of partsNeeded: ', partsNeeded);
+console.log('1. Number of parts needed: ', partsNeeded);
+// prints: 1. Number of parts needed: (then refrences the variable parts needed which is (currently) defined as 40)
+
 
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 let supplyChanges = [ 3, 5, -6, 0, 7, 11 ];
-console.log('2. Array of supplyChanges:', supplyChanges);
+console.log('2. Array of supply changes: ', supplyChanges);
+// prints: 2. Array of supply changes: then prints the numeric values as a series of strings
+
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
-console.log('3. Second supplyChange is:', supplyChanges[1]);
+console.log('3. Second supply change is: ', supplyChanges[1]);
+//prints: 3. Second supply change is: (then calls the second value in the array supplyChanges which is 5)
+
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
-supplyChanges.pop;
-let removedSupplies = 11;
-console.log('4. Removed item:', removedSupplies);
+let removedSupplies = supplyChanges.pop();
+console.log('4. Removed item: ', removedSupplies);
+// prints 4. Removed item: (then uses the value removedSupplies which is defined as supplyChanges.pop(); (pulling out the last value in the array))
+
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 supplyChanges.push(25);
-console.log('5. Adding 25 to supplyChanges.', supplyChanges[5]);
+console.log('5. Adding 25 to supply changes ', supplyChanges[5]);
+// prints 5. Adding 25 to supply changes ( then calls the supply changes in the 5th position which isnt defined and will be filled with 25 by the .push function)
+
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
@@ -31,13 +40,17 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges[5]);
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
 for (let x = 0; x < supplyChanges.length; x++) {
-    if (x > 0);
+    if (x > 0)
         console.log('Added ', x, " parts" )
-    if (x === 0);
+    if (x === 0)
         console.log('No Change')
-    if (x < 0);
+    if (x < 0)
         console.log('Removed ', x, " parts" )
 }
+//goes through the array and talks through how it uses the numbers based on if they are greater than, equal to or less than 0
+
+
+
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
